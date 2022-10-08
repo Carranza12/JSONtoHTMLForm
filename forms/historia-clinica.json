@@ -807,7 +807,7 @@
                ]
             },
             {
-               "type":"contenedor",
+               "type":"contenedorCheckbox",
                "inputs":[
                   {
                            "id":"practica_deporte_gym",
@@ -987,7 +987,236 @@
          },
          "rows":4,
          "inputs":[
-       
+            {
+               "id":"fuma",
+               "name":"fuma",
+               "type":"radio",
+               "label":{
+                  "es":"¿Fuma?",
+                  "en":"Do you smoke?",
+                  "pt":"Fuma?"
+               },
+               "source":"local",
+               "options":[
+                  {
+                     "id":"fuma_si",
+                     "value":"SI",
+                     "text":{
+                        "es":"Si",
+                        "en":"Yes",
+                        "pt":"Sim"
+                     }
+                  },
+                  {
+                     "id":"fuma_no",
+                     "value":"NO",
+                     "text":{
+                        "es":"No",
+                        "en":"No",
+                        "pt":"Não"
+                     }
+                  }
+               ]
+            },
+           {
+            "type":"contenedor",
+            "inputs":[
+               {
+                  "id":"edad_inicio_fumar",
+                  "name":"edad_inicio_fumar",
+                  "type":"text",
+                  "hidden":true,
+                  "dependson":"fuma",
+                  "label": {
+                     "es":"Edad en que comenzo",
+                     "en":"Age when you started",
+                     "pt":"Idade começou"
+                  }
+               },
+               {
+                  "id":"anios_fumando",
+                  "name":"anios_fumando",
+                  "type":"text",
+                  "hidden":true,
+                  "dependson":"fuma",
+                  "label":{
+                     "es":"Años que ha fumado",
+                     "en":"Years you have smoked",
+                     "pt":"Anos que você fumou"
+                  }
+               },
+               {
+                  "id":"cigarros_por_dia",
+                  "name":"cigarros_por_dia",
+                  "type":"text",
+                  "hidden":true,
+                  "dependson":"fuma",
+                  "label":{
+                     "es":"Cigarros por día",
+                     "en":"Cigarettes per day",
+                     "pt":"Cigarros por dia"
+                  }
+               },
+               {
+                  "id":"cuanto_tiempo_lo_dejo",
+                  "name":"cuanto_tiempo_lo_dejo",
+                  "type":"text",
+                  "hidden":true,
+                  "dependson":"fuma",
+                  "label":{
+                     "es":"¿Cuánto tiempo lo dejo?",
+                     "en":"How long did you leave it?",
+                     "pt":"Quanto tempo deixo?"
+                  }
+               }
+            ]
+           },
+            {
+               "id":"toma_bebidas_alcoholicas",
+               "name":"toma_bebidas_alcoholicas",
+               "type":"radio",
+               "label":{
+                  "es":"¿Toma bebidas alcohólicas?",
+                  "en":"Do you drink alcoholic beverages?",
+                  "pt":"Você bebe bebidas alcoólicas?"
+               },
+               "source":"local",
+               "options":[
+                  {
+                     "id":"toma_bebidas_alcoholicas_si",
+                     "value":"SI",
+                     "text":{
+                        "es":"Si",
+                        "en":"Yes",
+                        "pt":"Sim"
+                     }
+                  },
+                  {
+                     "id":"toma_bebidas_alcoholicas_no",
+                     "value":"NO",
+                     "text":{
+                        "es":"No",
+                        "en":"No",
+                        "pt":"Não"
+                     }
+                  }
+               ]
+            },
+            {
+               "id":"inicio_bebida",
+               "name":"inicio_bebida",
+               "type":"text",
+               "hidden":true,
+               "dependson":"toma_bebidas_alcoholicas",
+               "label":{
+                  "es":"Inicio de consumo",
+                  "en":"Start of consumption",
+                  "pt":"Começo do consumo"
+               }
+            },
+            {
+               "id":"frecuencia_consumo_alcohol",
+               "name":"frecuencia_consumo_alcohol",
+               "type":"text",
+               "hidden":true,
+               "dependson":"toma_bebidas_alcoholicas",
+               "label":{
+                  "es":"Frecuencia",
+                  "en":"Frequency",
+                  "pt":"Frequência"
+               }
+            },
+            {
+               "id":"cantidad_consumo_alcohol",
+               "name":"cantidad_consumo_alcohol",
+               "type":"text",
+               "hidden":true,
+               "dependson":"toma_bebidas_alcoholicas",
+               "label":{
+                  "es":"Cantidad",
+                  "en":"Amount",
+                  "pt":"Quantia"
+               }
+            },
+            {
+               "id":"ha_usado_drogas",
+               "name":"ha_usado_drogas",
+               "type":"radio",
+               "label":{
+                  "es":"¿Ha consumido drogas?",
+                  "en":"Have you used drugs?",
+                  "pt":"Você já usou drogas?"
+               },
+               "source":"local",
+               "options":[
+                  {
+                     "id":"ha_usado_drogas_si",
+                     "value":"SI",
+                     "text":{
+                        "es":"Si",
+                        "en":"Yes",
+                        "pt":"Sim"
+                     }
+                  },
+                  {
+                     "id":"ha_usado_drogas_no",
+                     "value":"NO",
+                     "text":{
+                        "es":"No",
+                        "en":"No",
+                        "pt":"Não"
+                     }
+                  }
+               ]
+            },
+            {
+               "id":"especificar_droga",
+               "name":"especificar_droga",
+               "type":"text",
+               "hidden":true,
+               "dependson":"ha_usado_drogas",
+               "label":{
+                  "es":"Especificar las drogas",
+                  "en":"Specify drugs",
+                  "pt":"Especificar drogas"
+               }
+            },
+            {
+               "id":"inicio_consumo_droga",
+               "name":"inicio_consumo_droga",
+               "type":"text",
+               "hidden":true,
+               "dependson":"ha_usado_drogas",
+               "label":{
+                  "es":"Inicio de consumo",
+                  "en":"Start of consumption",
+                  "pt":"Começo do consumo"
+               }
+            },
+            {
+               "id":"frecuencia_consumo_droga",
+               "name":"frecuencia_consumo_droga",
+               "type":"text",
+               "hidden":true,
+               "dependson":"ha_usado_drogas",
+               "label":{
+                  "es":"Frecuencia",
+                  "en":"Frequency",
+                  "pt":"Frequência"
+               }
+            },
+            {
+               "id":"motivo_consumo_drogas",
+               "name":"motivo_consumo_drogas",
+               "type":"text",
+               "hidden":true,
+               "dependson":"ha_usado_drogas",
+               "label":{
+                  "es":"Motivo de consumo de drogas",
+                  "en":"Reason for drug use",
+                  "pt":"Motivo do uso de drogas"
+               }
+            }
          ]
       },
       {
