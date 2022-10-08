@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms dinamicos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: blanchedalmond;
+    }
+    main {
+      padding: 20px;
+      width: 90%;
+      margin: 0 auto;
+
+      background: #fff;
+    }
+    h1 {
+      text-align: center;
+    }
+
+    .checkFloat {
+      width: auto !important;
+    }
+  </style>
+  <body>
+    <main>
+      <form action="" class="row" id="frm"></form>
+    </main>
+
+    <script>
+      const form = document.getElementById("frm");
+      fetch("forms/historia-clinica.json")
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data)
+          generateDynamicForm(data, form);
+        });
+
+      const generateDynamicForm = (form, container) => {
+        
+
+        form.sections.forEach((section) => {
+          const row = document.createElement("div");
+          row.classList.add("row");
+          row.innerHTML += `
+              <div class="col-12 col-md-12 col-lg-12">
+                <h2 class="subtitle">${section.title.es}</h2>  
+              </div>
+            `;
+          section.inputs.forEach((input, index) => {
+            //SELECT
+            if (input.type == "select") {
+              const div = document.createElement("div");
+              const select = document.createElement("select");
+              const label = document.createElement("label");
+              div.classList.add("col-12");
+              div.classList.add("col-md-6");
+              div.classList.add("col-lg-3");
+              div.classList.add("mb-3");
+              label.innerText = input.label.es;
+              label.classList.add("form-label");
+              label.htmlFor = input.id;
+              select.id = input.id;
+              select.classList.add("form-select");
+              select.value = input.id.value;
+              const optionSelecciona = document.createElement("option");
+              optionSelecciona.text = "SELECCIONA";
+              select.appendChild(optionSelecciona);
+              input.options.forEach((option) => {
+                const optionItem = document.createElement("option");
+                optionItem.value = option.value;
+                optionItem.text = option.text.es;
+                // console.log(optionItem)
+                select.appendChild(optionItem);
+              });
+              div.appendChild(label);
+              div.appendChild(select);
+              row.append(div);
+            }
+            //TEXT
+            if (input.type == "text") {
+              const div = document.createElement("div");
+              const inputText = document.createElement("input");
+              const label = document.createElement("label");
+              div.classList.add("col-12");
+              div.classList.add("col-md-6");
+              div.classList.add("col-lg-3");
+              div.classList.add("mb-3");
+              label.innerText = input.label.es;
+              label.classList.add("form-label");
+              label.htmlFor = input.id;
+              inputText.type = "text";
+              inputText.classList.add("form-control");
+              inputText.name = input.name;
+              inputText.id = input.id;
+              inputText.value = input.id.value ? input.id.value : "";
+              div.appendChild(label);
+              div.appendChild(inputText);
+              row.append(div);
+            }
+            //RADIO
+            if (input.type == "radio") {
+              const div = document.createElement("div");
+
+              const label = document.createElement("label");
+              div.classList.add("col-12");
+              div.classList.add("col-md-6");
+              div.classList.add("col-lg-3");
+              div.classList.add("mb-3");
+              label.innerText = input.label.es;
+              label.classList.add("form-label");
+              label.htmlFor = input.id;
+              row.appendChild(label);
+              if (input.options) {
+                input.options.forEach((radioItem) => {
+                  const formCheck = document.createElement("div");
+                  formCheck.classList.add("form-check");
+                  const inputRadioChild = document.createElement("input");
+                  inputRadioChild.type = "radio";
+                  inputRadioChild.classList.add("form-check-input");
+                  inputRadioChild.name = input.name;
+                  inputRadioChild.id = radioItem.id;
+                  inputRadioChild.value = radioItem.value;
+                  const labelChild = document.createElement("label");
+                  labelChild.classList.add("form-check-label");
+                  labelChild.htmlFor = radioItem.id;
+                  labelChild.innerText = radioItem.text.es;
+                  formCheck.appendChild(labelChild);
+                  formCheck.appendChild(inputRadioChild);
+                  div.appendChild(formCheck);
+                });
+              }
+              if (input.radios) {
+                input.radios.forEach((radioItem) => {
+                  const formCheck = document.createElement("div");
+                  formCheck.classList.add("form-check");
+                  const inputRadioChild = document.createElement("input");
+                  inputRadioChild.type = "radio";
+                  inputRadioChild.classList.add("form-check-input");
+                  inputRadioChild.name = input.name;
+                  inputRadioChild.id = radioItem.id;
+                  inputRadioChild.value = radioItem.value;
+                  const labelChild = document.createElement("label");
+                  labelChild.classList.add("form-check-label");
+                  labelChild.htmlFor = radioItem.id;
+                  labelChild.innerText = radioItem.text.es;
+                  formCheck.appendChild(labelChild);
+                  formCheck.appendChild(inputRadioChild);
+                  div.appendChild(formCheck);
+                });
+              }
+              row.append(div);
+            }
+            //CHECKBOX
+            if(input.type=="date"){
+              
+              row.innerHTML+=`
+              <div class="col-12 col-md-6 col-lg-3 mb-3">
+                <label class="form-label" for="${input.id}">${input.label.es}</label>
+                <input type="date" class="form-control" name="${input.name}" id="${input.id}">
+              </div>
+              `;
+           
+            }
+            if (input.type == "checkbox") {
+              const div = document.createElement("div");
+              div.classList.add("col-12");
+              div.classList.add("col-md-6");
+              div.classList.add("col-lg-3");
+              div.classList.add("mb-3");
+              div.classList.add("checkFloat");
+              const inputCheckbox = document.createElement("input");
+              inputCheckbox.type = "checkbox";
+              inputCheckbox.classList.add("btn-check");
+              inputCheckbox.name = input.name;
+              inputCheckbox.id = input.id;
+              inputCheckbox.autocomplete = "off";
+              inputCheckbox.value = input.checkboxes[0].text.es;
+              const labelCheckbox = document.createElement("label");
+              labelCheckbox.classList.add("btn");
+
+              labelCheckbox.classList.add("btn-outline-dark");
+              labelCheckbox.classList.add("mb-2");
+              labelCheckbox.htmlFor = input.id;
+              labelCheckbox.innerText = input.checkboxes[0].text.es;
+
+              div.appendChild(labelCheckbox);
+              div.appendChild(inputCheckbox);
+              row.append(div);
+            }
+            if (input.type == "textarea") {
+              const div = document.createElement("div");
+              const inputTextarea = document.createElement("input");
+              inputTextarea.type = "textarea";
+              inputTextarea.classList.add("form-control");
+              inputTextarea.name = input.name;
+              inputTextarea.id = input.id;
+              inputTextarea.rows = "4";
+
+              const labelTextarea = document.createElement("label");
+              labelTextarea.classList.add("formLabel");
+              labelTextarea.htmlFor = input.id;
+              labelTextarea.innerText = input.label.es;
+
+              div.appendChild(labelTextarea);
+              div.appendChild(inputTextarea);
+
+              row.append(div);
+            }
+            if (input.type == "contenedor") {
+              const div = document.createElement("div");
+              div.id = input.id;
+              div.classList.add("col-12");
+              div.classList.add("col-md-6");
+              div.classList.add("col-lg-6");
+              div.classList.add("col-mb-3");
+
+              let templateInputs = "";
+              input.inputs.forEach((item, index) => {
+                templateInputs += `
+                <input class="btn-check" type="${item.type}" name="${item.name}" id="${item.id}" autocomplete="off" value="${item.checkboxes[0].value}">
+                <label class="btn btn-outline-dark mb-2" for="${item.id}">${item.checkboxes[0].value}</label>   
+              `;
+              });
+              div.innerHTML = templateInputs;
+              row.append(div);
+              console.log(div);
+            }
+          });
+        
+        
+          container.append(row)
+        });
+      };
+    </script>
+  </body>
+</html>

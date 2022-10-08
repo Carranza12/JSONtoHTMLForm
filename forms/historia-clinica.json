@@ -1,0 +1,1154 @@
+{
+    "id":"historia_clinica",
+    "name":{
+       "es":"Historia Clinica",
+       "en":"Medical History",
+       "pt":"História Clínica"
+    },
+    "db_table":"historia_clinica",
+    "form":{
+       "title":{
+          "es":"Historia Clinica",
+          "en":"Medical History",
+          "pt":"História Clínica"
+       },
+       "subtitles":[
+          {
+             "es":"Información General",
+             "en":"General information",
+             "pt":"Informações gerais"
+          },
+          {
+             "es":"Contacto de Emergencia",
+             "en":"Contacto de Emergencia",
+             "pt":"Contacto de Emergencia"
+          },
+          {
+             "es":"Antecedentes personales no patológicos",
+             "en":"Antecedentes personales no patológicos",
+             "pt":"Antecedentes personales no patológicos"
+          },
+          {
+             "es":"Antecedentes personales patológicos",
+             "en":"Antecedentes personales patológicos",
+             "pt":"Antecedentes personales patológicos"
+          },
+          {
+             "es":"Padece o ha padecido:",
+             "en":"Padece o ha padecido:",
+             "pt":"Padece o ha padecido:"
+          },
+          {
+             "es":"Antecedentes Gineco-Obsétricos",
+             "en":"Antecedentes Gineco-Obsétricos",
+             "pt":"Antecedentes Gineco-Obsétricos"
+          },
+          {
+             "es":"Padecimiento Actual",
+             "en":"Padecimiento Actual",
+             "pt":"Padecimiento Actual"
+          },
+          {
+             "es":"Padecimientos Actuales",
+             "en":"Padecimientos Actuales",
+             "pt":"Padecimientos Actuales"
+          },
+          {
+             "es":"Somatometría",
+             "en":"Somatometría",
+             "pt":"Somatometría"
+          },
+          {
+             "es":"Patologías por aparatos y sistemas",
+             "en":"Patologías por aparatos y sistemas",
+             "pt":"Patologías por aparatos y sistemas"
+          },
+          {
+             "es":"Antecedentes Laborales",
+             "en":"Antecedentes Laborales",
+             "pt":"Antecedentes Laborales"
+          },
+          {
+             "es":"Audiometría",
+             "en":"Audiometría",
+             "pt":"Audiometría"
+          },
+          {
+             "es":"Examen de Alcohol y Drogas",
+             "en":"Examen de Alcohol y Drogas",
+             "pt":"Examen de Alcohol y Drogas"
+          },
+          {
+             "es":"Drogas",
+             "en":"Drogas",
+             "pt":"Drogas"
+          },
+          {
+             "es":"Alcohol",
+             "en":"Alcohol",
+             "pt":"Alcohol"
+          },
+          {
+             "es":"Rangos",
+             "en":"Rangos",
+             "pt":"Rangos"
+          },
+          {
+             "es":"Normal: Menores a 0.04% BAC",
+             "en":"Normal: Menores a 0.04% BAC",
+             "pt":"Normal: Menores a 0.04% BAC"
+          },
+          {
+             "es":"Aliento alcohólico: Menos de 200mg/dl de alcohol en sangre 0 de 0.04 a 0.06% BAC",
+             "en":"Aliento alcohólico: Menos de 200mg/dl de alcohol en sangre 0 de 0.04 a 0.06% BAC",
+             "pt":"Aliento alcohólico: Menos de 200mg/dl de alcohol en sangre 0 de 0.04 a 0.06% BAC"
+          },
+          {
+             "es":"Ebriedad incompleta: Más de 200mg/dl de alcohol en sangre 0 de 0.08 a 0.10% BAC",
+             "en":"Ebriedad incompleta: Más de 200mg/dl de alcohol en sangre 0 de 0.08 a 0.10% BAC",
+             "pt":"Ebriedad incompleta: Más de 200mg/dl de alcohol en sangre 0 de 0.08 a 0.10% BAC"
+          },
+          {
+             "es":"Ebriedad completa:Más de 200mg/dl de alcohol en sandre 0 más de 0.10% BAC",
+             "en":"Ebriedad completa:Más de 200mg/dl de alcohol en sandre 0 más de 0.10% BAC",
+             "pt":"Ebriedad completa:Más de 200mg/dl de alcohol en sandre 0 más de 0.10% BAC"
+          },
+          {
+             "es":"Resultado de la prueba",
+             "en":"Resultado de la prueba",
+             "pt":"Resultado de la prueba"
+          },
+          {
+             "es":"Exploración física",
+             "en":"Exploración física",
+             "pt":"Exploración física"
+          },
+          {
+             "es":"Interrogatorio por aparatos y sistemas",
+             "en":"Interrogatorio por aparatos y sistemas",
+             "pt":"Interrogatorio por aparatos y sistemas"
+          },
+          {
+             "es":"General:",
+             "en":"General:",
+             "pt":"General:"
+          },
+          {
+             "es":"Ojos:",
+             "en":"Ojos:",
+             "pt":"Ojos:"
+          },
+          {
+             "es":"ORL:",
+             "en":"ORL:",
+             "pt":"ORL:"
+          },
+          {
+             "es":"Cardiovascular:",
+             "en":"Cardiovascular:",
+             "pt":"Cardiovascular:"
+          },
+          {
+             "es":"Respiratorio:",
+             "en":"Respiratorio:",
+             "pt":"Respiratorio:"
+          },
+          {
+             "es":"Digestivo:",
+             "en":"Digestivo:",
+             "pt":"Digestivo:"
+          },
+          {
+             "es":"Ginecológicos:",
+             "en":"Ginecológicos:",
+             "pt":"Ginecológicos:"
+          },
+          {
+             "es":"Urogenital",
+             "en":"Urogenital",
+             "pt":"Urogenital"
+          },
+          {
+             "es":"Musculoesqueletico:",
+             "en":"Musculoesqueletico:",
+             "pt":"Musculoesqueletico:"
+          },
+          {
+             "es":"Piel:",
+             "en":"Piel:",
+             "pt":"Piel:"
+          },
+          {
+             "es":"Neurológico:",
+             "en":"Neurológico:",
+             "pt":"Neurológico:"
+          },
+          {
+             "es":"Endocrinológico:",
+             "en":"Endocrinológico:",
+             "pt":"Endocrinológico:"
+          },
+          {
+             "es":"Psiquiátrico:",
+             "en":"Psiquiátrico:",
+             "pt":"Psiquiátrico:"
+          },
+          {
+             "es":"Hernatológico:",
+             "en":"Hernatológico:",
+             "pt":"Hernatológico:"
+          },
+          {
+             "es":"Espirometría",
+             "en":"Espirometría",
+             "pt":"Espirometría"
+          },
+          {
+             "es":"Antecedentes heredofamiliares",
+             "en":"Antecedentes heredofamiliares",
+             "pt":"Antecedentes heredofamiliares"
+          },
+          {
+             "es":"¿Algún familiar inmediato ha padecido o fallecido de alguna de las siguientes enfermedades?",
+             "en":"¿Algún familiar inmediato ha padecido o fallecido de alguna de las siguientes enfermedades?",
+             "pt":"¿Algún familiar inmediato ha padecido o fallecido de alguna de las siguientes enfermedades?"
+          },
+          {
+             "es":"Archivos de Laboratorio",
+             "en":"Archivos de Laboratorio",
+             "pt":"Archivos de Laboratorio"
+          },
+          {
+             "es":"Archivo 1",
+             "en":"Archivo 1",
+             "pt":"Archivo 1"
+          },
+          {
+             "es":"Archivo 2",
+             "en":"Archivo 2",
+             "pt":"Archivo 2"
+          },
+          {
+             "es":"Archivo 3",
+             "en":"Archivo 3",
+             "pt":"Archivo 3"
+          },
+          {
+             "es":"Clasificación de Aptitudes",
+             "en":"Clasificación de Aptitudes",
+             "pt":"Clasificación de Aptitudes"
+          },
+          {
+             "es":"Diagnósticos",
+             "en":"Diagnósticos",
+             "pt":"Diagnósticos"
+          },{
+             "es":"Doctor a cargo",
+             "en":"Doctor a cargo",
+             "pt":"Doctor a cargo"
+          }
+         
+       ]
+       
+    },
+    "sections":[
+      {
+         "title": {
+            "es":"",
+            "en":"",
+            "pt":""
+         },
+         "rows":4,
+         "inputs":[
+            {
+               "id":"tipo_examen",
+               "name":"tipo_examen",
+               "type":"select",
+               "label":{
+                  "es":"Tipo de examen",
+                  "en":"Exam type",
+                  "pt":"Tipo de exame"
+               },
+               "source":"local",
+               "options":[
+                  {
+                     "value":"INGRESO",
+                     "text":{
+                        "es":"INGRESO",
+                        "en":"ENTRY",
+                        "pt":"ENTRADA"
+                     }
+                  },
+                  {
+                     "value":"ACTUALIZACIÓN",
+                     "text":{
+                        "es":"ACTUALIZACIÓN",
+                        "en":"UPDATE",
+                        "pt":"ATUALIZAR"
+                     }
+                  },
+                  {
+                     "value":"RETIRO",
+                     "text":{
+                        "es":"RETIRO",
+                        "en":"RETIREMENT",
+                        "pt":"SALIDA"
+                     }
+                  },
+                  {
+                     "value":"ESPECIAL",
+                     "text":{
+                        "es":"ESPECIAL",
+                        "en":"SPECIAL",
+                        "pt":"ESPECIAL"
+                     }
+                  }
+               ]
+            },
+            {
+               "id":"fecha_historia",
+               "name":"fecha_historia",
+               "type":"date",
+               "label":{
+                  "es":"Fecha de examen",
+                  "en":"Exam date",
+                  "pt":"Data do exame"
+               }
+            }
+         ]
+      },
+      {
+         "title":  {
+            "es":"Información General",
+            "en":"General information",
+            "pt":"Informações gerais"
+         },
+         "rows":4,
+         "inputs":[
+            {
+               "id":"nomina",
+               "name":"nomina",
+               "type":"text",
+               "label":{
+                  "es":"Nómina",
+                  "en":"ID",
+                  "pt":"ID"
+               }
+            },
+            {
+               "id":"nombre",
+               "name":"nombre",
+               "type":"text",
+               "label":{
+                  "es":"Nombre",
+                  "en":"Name",
+                  "pt":"Nome"
+               }
+            },
+            {
+               "id":"genero",
+               "name":"genero",
+               "type":"select",
+               "label":{
+                  "es":"Género",
+                  "en":"Gender",
+                  "pt":"Gênero sexual"
+               },
+               "source":"local",
+               "options":[
+                  {
+                     "value":"Femenino",
+                     "text":{
+                        "es":"Femenino",
+                        "en":"Female",
+                        "pt":"Feminino"
+                     }
+                  },
+                  {
+                     "value":"Masculino",
+                     "text":{
+                        "es":"Masculino",
+                        "en":"Male",
+                        "pt":"Masculino"
+                     }
+                  }
+               ]
+            },
+            {
+               "id":"fecha_nacimiento",
+               "name":"fecha_nacimiento",
+               "type":"date",
+               "label":{
+                  "es":"Fecha de nacimiento",
+                  "en":"Birthdate",
+                  "pt":"data de Nascimento"
+               }
+            },
+            {
+               "id":"edad",
+               "name":"edad",
+               "type":"text",
+               "label":{
+                  "es":"Edad",
+                  "en":"Age",
+                  "pt":"Era"
+               }
+            },
+            {
+               "id":"escolaridad",
+               "name":"escolaridad",
+               "type":"select",
+               "label":{
+                  "es":"Escolaridad",
+                  "en":"Education level",
+                  "pt":"Bolsa de estudo"
+               },
+               "source":"local",
+               "options":[
+                  {
+                     "value":"PRIMARIA",
+                     "text":{
+                        "es":"PRIMARIA",
+                        "en":"PRIMARY",
+                        "pt":"PRIMARIA"
+                     }
+                  },
+                  {
+                     "value":"SECUNDARIA",
+                     "text":{
+                        "es":"SECUNDARIA",
+                        "en":"JUNIOR HIGH",
+                        "pt":"SECUNDÁRIO"
+                     }
+                  },
+                  {
+                     "value":"PREPARATORIA",
+                     "text":{
+                        "es":"PREPARATORIA",
+                        "en":"HIGH SCHOOL",
+                        "pt":"PREPARATÓRIO"
+                     }
+                  },
+                  {
+                     "value":"UNIVERSIDAD",
+                     "text":{
+                        "es":"UNIVERSIDAD",
+                        "en":"UNIVERSITY",
+                        "pt":"UNIVERSIDADE"
+                     }
+                  },
+                  {
+                     "value":"MAESTRIA",
+                     "text":{
+                        "es":"MAESTRIA",
+                        "en":"MASTERS",
+                        "pt":"DOMÍNIO"
+                     }
+                  }
+               ]
+            },
+            {
+               "id":"estado_civil",
+               "name":"estado_civil",
+               "type":"select",
+               "label":{
+                  "es":"Estado Civil",
+                  "en":"Marital Status",
+                  "pt":"Estado Civil"
+               },
+               "source":"local",
+               "options":[
+                  {
+                     "value":"SOLTERO",
+                     "text":{
+                        "es":"SOLTERO",
+                        "en":"SINGLE",
+                        "pt":"SOLTEIRO"
+                     }
+                  },
+                  {
+                     "value":"CASADO",
+                     "text":{
+                        "es":"CASADO",
+                        "en":"MARRIED",
+                        "pt":"CASADO"
+                     }
+                  },
+                  {
+                     "value":"SEPARADO",
+                     "text":{
+                        "es":"SEPARADO",
+                        "en":"SEPARATED",
+                        "pt":"SEPARADO"
+                     }
+                  },
+                  {
+                     "value":"DIVORCIADO",
+                     "text":{
+                        "es":"DIVORCIADO",
+                        "en":"DIVORCED",
+                        "pt":"DIVORCIADO"
+                     }
+                  },
+                  {
+                     "value":"UNION LIBRE",
+                     "text":{
+                        "es":"UNION LIBRE",
+                        "en":"FREE UNION",
+                        "pt":"UNIÃO LIVRE"
+                     }
+                  },
+                  {
+                     "value":"VIUDO",
+                     "text":{
+                        "es":"VIUDO",
+                        "en":"WIDOW",
+                        "pt":"VIÚVO"
+                     }
+                  }
+               ]
+            },
+            {
+               "id":"direccion",
+               "name":"direccion",
+               "type":"text",
+               "label":{
+                  "es":"Dirección",
+                  "en":"Address",
+                  "pt":"Morada"
+               }
+            },
+            {
+               "id":"cp",
+               "name":"cp",
+               "type":"text",
+               "label":{
+                  "es":"Código postal",
+                  "en":"Postal Code",
+                  "pt":"Código postal"
+               }
+            },
+            {
+               "id":"religion",
+               "name":"religion",
+               "type":"text",
+               "label":{
+                  "es":"Religión",
+                  "en":"Religion",
+                  "pt":"Religião"
+               }
+            },
+            {
+               "id":"puesto",
+               "name":"puesto",
+               "type":"text",
+               "label":{
+                  "es":"Puesto",
+                  "en":"Position",
+                  "pt":"Posto de trabalho"
+               }
+            },
+            {
+               "id":"imss",
+               "name":"imss",
+               "type":"text",
+               "label":{
+                  "es":"No. IMSS",
+                  "en":"SSN",
+                  "pt":"Número do seguro social"
+               }
+            },
+            {
+               "id":"telefono",
+               "name":"telefono",
+               "type":"text",
+               "label":{
+                  "es":"Teléfono",
+                  "en":"Phone number",
+                  "pt":"Telefone"
+               }
+            },
+            {
+               "id":"grupo_rh",
+               "name":"grupo_rh",
+               "type":"select",
+               "label":{
+                  "es":"Grupo y RH",
+                  "en":"Blood type",
+                  "pt":"Grupo sanguineo"
+               },
+               "source":"local",
+               "options":[
+                  {
+                     "value":"A+",
+                     "text":{
+                        "es":"A+",
+                        "en":"A+",
+                        "pt":"A+"
+                     }
+                  },
+                  {
+                     "value":"A-",
+                     "text":{
+                        "es":"A-",
+                        "en":"A-",
+                        "pt":"A-"
+                     }
+                  },
+                  {
+                     "value":"B+",
+                     "text":{
+                        "es":"B+",
+                        "en":"B+",
+                        "pt":"B+"
+                     }
+                  },
+                  {
+                     "value":"B-",
+                     "text":{
+                        "es":"B-",
+                        "en":"B-",
+                        "pt":"B-"
+                     }
+                  },
+                  {
+                     "value":"AB+",
+                     "text":{
+                        "es":"AB+",
+                        "en":"AB+",
+                        "pt":"AB+"
+                     }
+                  },
+                  {
+                     "value":"AB-",
+                     "text":{
+                        "es":"AB-",
+                        "en":"AB-",
+                        "pt":"AB-"
+                     }
+                  },
+                  {
+                     "value":"O+",
+                     "text":{
+                        "es":"O+",
+                        "en":"O+",
+                        "pt":"O+"
+                     }
+                  },
+                  {
+                     "value":"O-",
+                     "text":{
+                        "es":"O-",
+                        "en":"O-",
+                        "pt":"O-"
+                     }
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "title":  {
+            
+               "es":"Contacto de Emergencia",
+               "en":"Contacto de Emergencia",
+               "pt":"Contacto de Emergencia"
+            
+         },
+         "rows":4,
+         "inputs":[
+            {
+               "id":"nombre_contacto_emergencia",
+               "name":"nombre_contacto_emergencia",
+               "type":"text",
+               "label":{
+                  "es":"Contacto de emergencia",
+                  "en":"Emergency contact",
+                  "pt":"Contato de emergência"
+               }
+            },
+            {
+               "id":"parentesco_contacto_emergencia",
+               "name":"parentesco_contacto_emergencia",
+               "type":"text",
+               "label":{
+                  "es":"Parentesco",
+                  "en":"Relationship",
+                  "pt":"Relação"
+               }
+            },
+            {
+               "id":"telefono_contacto_emergencia",
+               "name":"telefono_contacto_emergencia",
+               "type":"text",
+               "label":{
+                  "es":"Teléfono",
+                  "en":"Phone number",
+                  "pt":"Telefone"
+               }
+            }
+         ]
+      },
+
+
+      {
+         "title":  {
+            "es":"Antecedentes personales no patológicos",
+             "en":"Antecedentes personales no patológicos",
+             "pt":"Antecedentes personales no patológicos"
+         },
+         "rows":4,
+         "inputs":[
+            {
+               "id":"alimentacion",
+               "name":"alimentacion",
+               "type":"select",
+               "label":{
+                  "es":"Alimentación por día",
+                  "en":"Feeding per day",
+                  "pt":"Alimentação por dia"
+               },
+               "source":"local",
+               "options":[
+                  {
+                     "value":"UNA VEZ AL DÍA",
+                     "text":{
+                        "es":"UNA VEZ AL DÍA",
+                        "en":"ONCE PER DAY",
+                        "pt":"UMA VEZ AO DIA"
+                     }
+                  },
+                  {
+                     "value":"DOS VECES AL DÍA",
+                     "text":{
+                        "es":"DOS VECES AL DÍA",
+                        "en":"TWICE PER DAY",
+                        "pt":"DUAS VEZES AO DIA"
+                     }
+                  },
+                  {
+                     "value":"TRES VECES AL DÍA",
+                     "text":{
+                        "es":"TRES VECES AL DÍA",
+                        "en":"3 TIMES PER DAY",
+                        "pt":"TRÊS VEZES AO DIA"
+                     }
+                  },
+                  {
+                     "value":"MÁS DE TRES VECES AL DÍA",
+                     "text":{
+                        "es":"MÁS DE TRES VECES AL DÍA",
+                        "en":"MORE THAN 3 TIMES PER DAY",
+                        "pt":"MAIS DE TRÊS VEZES POR DIA"
+                     }
+                  }
+               ]
+            },
+            {
+               "id":"horario",
+               "name":"horario",
+               "type":"radio",
+               "label":{
+                  "es":"¿Tiene horario de alimentación?",
+                  "en":"Do you have a feeding schedule?",
+                  "pt":"Você tem horário de alimentação?"
+               },
+               "source":"local",
+               "options":[
+                  {
+                     "id":"horario_si",
+                     "value":"Si",
+                     "text":{
+                        "es":"Si",
+                        "en":"Yes",
+                        "pt":"Sim"
+                     }
+                  },
+                  {
+                     "id":"horario_no",
+                     "value":"No",
+                     "text":{
+                        "es":"No",
+                        "en":"No",
+                        "pt":"Não"
+                     }
+                  }
+               ]
+            },
+            {
+               "id":"practica_deporte",
+               "name":"practica_deporte",
+               "type":"radio",
+               "label":{
+                  "es":"¿Practica algún deporte?",
+                  "en":"Do you play any sport?",
+                  "pt":"Pratica algum esporte?"
+               },
+               "source":"local",
+               "options":[
+                  {
+                     "id":"deporte_si",
+                     "value":"Si",
+                     "text":{
+                        "es":"Si",
+                        "en":"Yes",
+                        "pt":"Sim"
+                     }
+                  },
+                  {
+                       "id":"deporte_no",
+                     "value":"No",
+                     "text":{
+                        "es":"No",
+                        "en":"No",
+                        "pt":"Não"
+                     }
+                  }
+               ]
+            },
+            {
+               "type":"contenedor",
+               "inputs":[
+                  {
+                           "id":"practica_deporte_gym",
+                           "name":"practica_deporte_gym",
+                           "type":"checkbox",
+                           "checkboxes":[
+                              {
+                                 "value":"Gym",
+                                 "text":{
+                                    "es":"Gym",
+                                    "en":"Gym",
+                                    "pt":"Gym"
+                                 }
+                              }
+                           ]
+                  },
+                   {
+                           "id":"practica_deporte_Crossfit",
+                           "name":"practica_deporte_Crossfit",
+                           "type":"checkbox",
+                           "checkboxes":[
+                              {
+                                 "value":"Baile",
+                                 "text":{
+                                    "es":"Baile",
+                                    "en":"Dance",
+                                    "pt":"Dança"
+                                 }
+                              }]
+                        },
+
+                        {
+                           "id":"practica_deporte_basketbol",
+                           "name":"practica_deporte_basketbol",
+                           "type":"checkbox",
+                           "checkboxes":[
+                              {
+                                 "value":"Yoga",
+                                 "text":{
+                                    "es":"Basquetball",
+                                    "en":"Basketball",
+                                    "pt":"Basquete"
+                                 }
+                              }
+                           ]
+                        },
+                        {
+                           "id":"practica_deporte_yoga",
+                           "name":"practica_deporte_yoga",
+                           "type":"checkbox",
+                           "checkboxes":[
+                              {
+                                 "value":"Yoga",
+                                 "text":{
+                                    "es":"Yoga",
+                                    "en":"Yoga",
+                                    "pt":"Yoga"
+                                 }
+                              }
+                           ]
+                        },
+                        {
+                           "id":"practica_deporte_correr",
+                           "name":"practica_deporte_correr",
+                           "type":"checkbox",
+                           "checkboxes":[
+                              {
+                                 "value":"Correr",
+                                 "text":{
+                                    "es":"Correr",
+                                    "en":"Running",
+                                    "pt":"Corre"
+                                 }
+                              }
+                           ]
+                        },
+                        {
+                           "id":"practica_deporte_natacion",
+                           "name":"practica_deporte_natacion",
+                           "type":"checkbox",
+                           "checkboxes":[
+                              {
+                                 "value":"Natación",
+                                 "text":{
+                                    "es":"Natación",
+                                    "en":"Swimming",
+                                    "pt":"Natação"
+                                 }
+                              }
+                           ]
+                        },
+                        {
+                           "id":"practica_deporte_ciclismo",
+                           "name":"practica_deporte_ciclismo",
+                           "type":"checkbox",
+                           "checkboxes":[
+                              {
+                                 "value":"Ciclismo",
+                                 "text":{
+                                    "es":"Ciclismo",
+                                    "en":"Cycling",
+                                    "pt":"Ciclismo"
+                                 }
+                              }
+                           ]
+                        },
+                        {
+                           "id":"practica_deporte_futbol",
+                           "name":"practica_deporte_futbol",
+                           "type":"checkbox",
+                           "checkboxes":[
+                              {
+                                 "value":"Futbol",
+                                 "text":{
+                                    "es":"Futbol",
+                                    "en":"Football",
+                                    "pt":"Futebol"
+                                 }
+                              }
+                           ]
+                        },
+                        {
+                           "id":"practica_deporte_beisbol",
+                           "name":"practica_deporte_beisbol",
+                           "type":"checkbox",
+                           "checkboxes":[
+                              {
+                                 "value":"Beisbol",
+                                 "text":{
+                                    "es":"Beisbol",
+                                    "en":"Baseball",
+                                    "pt":"Beisebol"
+                                 }
+                              }
+                           ]
+                        },
+                    
+                        {
+                           "id":"practica_deporte_otro",
+                           "name":"practica_deporte_otro",
+                           "type":"checkbox",
+                           "checkboxes":[
+                              {
+                                 "value":"Otro",
+                                 "text":{
+                                    "es":"Otro",
+                                    "en":"Other",
+                                    "pt":"Outro"
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  },
+
+
+                  {
+                     "id":"practica_deporte_explicacion_otro",
+                     "name":"practica_deporte_explicacion_otro",
+                     "type":"text",
+                     "label":{
+                        "es":"Especificar el otro ejercicio",
+                        "en":"Specify the other exercise",
+                        "pt":"Especifique o outro exercício"
+                     }
+                  }
+                  
+               ]
+            },
+         
+      
+      {
+         "title":  {
+            "es":"Antecedentes personales patológicos",
+             "en":"Antecedentes personales patológicos",
+             "pt":"Antecedentes personales patológicos"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Antecedentes Gineco-Obsétricos",
+            "en":"Antecedentes Gineco-Obsétricos",
+            "pt":"Antecedentes Gineco-Obsétricos"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Somatometría",
+            "en":"Somatometría",
+            "pt":"Somatometría"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Patologías por aparatos y sistemas",
+            "en":"Patologías por aparatos y sistemas",
+            "pt":"Patologías por aparatos y sistemas"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Antecedentes Laborales",
+             "en":"Antecedentes Laborales",
+             "pt":"Antecedentes Laborales"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Audiometría",
+             "en":"Audiometría",
+             "pt":"Audiometría"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Examen de Alcohol y Drogas",
+            "en":"Examen de Alcohol y Drogas",
+            "pt":"Examen de Alcohol y Drogas"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Exploración física",
+             "en":"Exploración física",
+             "pt":"Exploración física"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Interrogatorio por aparatos y sistemas",
+             "en":"Interrogatorio por aparatos y sistemas",
+             "pt":"Interrogatorio por aparatos y sistemas"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Espirometría",
+            "en":"Espirometría",
+            "pt":"Espirometría"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Antecedentes heredofamiliares",
+             "en":"Antecedentes heredofamiliares",
+             "pt":"Antecedentes heredofamiliares"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Archivos de Laboratorio",
+             "en":"Archivos de Laboratorio",
+             "pt":"Archivos de Laboratorio"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Clasificación de Aptitudes",
+             "en":"Clasificación de Aptitudes",
+             "pt":"Clasificación de Aptitudes"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Diagnósticos",
+             "en":"Diagnósticos",
+             "pt":"Diagnósticos"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      },
+      {
+         "title":  {
+            "es":"Doctor a cargo",
+            "en":"Doctor a cargo",
+            "pt":"Doctor a cargo"
+         },
+         "rows":4,
+         "inputs":[
+       
+         ]
+      }
+
+
+
+
+
+    ]
+ }
+ 
